@@ -150,6 +150,16 @@ This is the shorthand for **flex-grow**, **flex-shrink** and **flex-basis** comb
 }
 ```
 
+### flex-basis
+
+This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means “look at my width or height property” (which was temporarily done by the main-size keyword until deprecated). The content keyword means “size it based on the item’s content” – this keyword isn’t well supported yet, so it’s hard to test and harder to know what its brethren max-content, min-content, and fit-content do.
+
+```css
+.item {
+  flex-basis:  | auto; /* default auto */
+}
+```
+
 ## Additional Reading
 
 - [Basic concepts of flexbox : Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
