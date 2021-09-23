@@ -76,7 +76,9 @@ This establishes the main-axis, thus defining the direction flex items are place
 }
 ```
 
-### Justify Content
+![Flex direction](images/flex-direction.png)
+
+### justify-content
 
 This defines the alignment along the **main axis**. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
 
@@ -88,7 +90,7 @@ This defines the alignment along the **main axis**. It helps distribute extra fr
 
 ![Justify Content](images/justify-content.png)
 
-### Align Items
+### align-items
 
 This defines the default behavior for how flex items are laid out along the **cross axis** on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).
 
@@ -100,9 +102,37 @@ This defines the default behavior for how flex items are laid out along the **cr
 
 ![Align Items](images/align-items.png)
 
+### flex-wrap
+
+By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+
+```css
+.container {
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
+```
+
+![Flex wrap](images/flex-wrap.png)
+
+### align-content
+
+This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+
+> Note: This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse). A single-line flexible container (i.e. where flex-wrap is set to its default value, no-wrap) will not reflect align-content.
+
+```css
+.container {
+  align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+}
+```
+
+![Align Content](images/align-content.png)
+
+----------
+
 ## Child Container
 
-### Align Self
+### align-self
 
 This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
 
@@ -182,3 +212,5 @@ Negative numbers are invalid.
 - [Cheat Sheets : Container properties](cheet-sheets/A%20-%20Container%20Properties.pdf)
 
 - [Cheat Sheets : Child properties](cheet-sheets/B%20-%20Child%20Properties.pdf)
+
+- [Freecodecamp.org : Youtube](https://www.youtube.com/watch?v=tXIhdp5R7sc)
