@@ -160,6 +160,18 @@ This defines the default size of an element before the remaining space is distri
 }
 ```
 
+### flex-shrink
+
+This defines the ability for a flex item to shrink if necessary.
+
+```css
+.item {
+  flex-shrink: 3; /* default 1 */
+}
+```
+
+Negative numbers are invalid.
+
 ## Additional Reading
 
 - [Basic concepts of flexbox : Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox

@@ -60,5 +60,6 @@ Control order of items at the child level
 } */
 
 .item-5 {
-  flex-basis: 75%;
+  flex-basis: 700px;
+  flex-shrink: 0;
 }
