@@ -106,11 +106,23 @@ This defines the default behavior for how flex items are laid out along the **cr
 
 This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
 
+```css
+.item {
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+```
+
 ![Align Self](images/align-self.png)
 
 ### Order
 
 By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
+
+```css
+.item {
+  order: 5; /* default is 0 */
+}
+```
 
 ![Order](images/order.png)
 
@@ -119,6 +131,12 @@ By default, flex items are laid out in the source order. However, the order prop
 This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
 
 If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).
+
+```css
+.item {
+  flex-grow: 4; /* default 0 */
+}
+```
 
 ![Flex grow](images/flex-grow.png)
 

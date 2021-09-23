@@ -21,7 +21,7 @@
   font-size: 35px;
   padding: 20px;
   margin: 10px;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 /*
@@ -48,8 +48,7 @@ Control order of items at the child level
 } */
 
 
-/*Control flex-grow of items at the child level*/
-
+/*Control flex-grow of items at the child level
 .item-4 {
  flex-grow: 2;
-}
+}*/
