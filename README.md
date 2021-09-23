@@ -108,6 +108,12 @@ This allows the default alignment (or the one specified by align-items) to be ov
 
 ![Align Self](images/align-self.png)
 
+### Order
+
+By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
+
+![Order](images/order.png)
+
 ## Additional Reading
 
 - [Basic concepts of flexbox : Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox

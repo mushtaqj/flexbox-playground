@@ -23,10 +23,25 @@
   margin: 10px;
 }
 
+/*
+Control order of items at the child level
+.item-1 {
+  order: 3;
+}
+
+.item-2 {
+
+  order: 4;
+}
+
 .item-3 {
-  height: 150px;
+  order: 0;
 }
 
 .item-4 {
-  align-self: flex-end;
+  order: 1;
 }
+
+.item-5 {
+  order: 2;
+} */
