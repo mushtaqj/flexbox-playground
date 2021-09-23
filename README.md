@@ -76,7 +76,7 @@ This establishes the main-axis, thus defining the direction flex items are place
 }
 ```
 
-## Justify Content
+### Justify Content
 
 This defines the alignment along the **main axis**. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
 
@@ -88,9 +88,25 @@ This defines the alignment along the **main axis**. It helps distribute extra fr
 
 ![Justify Content](images/justify-content.png)
 
-## Align Items
+### Align Items
 
 This defines the default behavior for how flex items are laid out along the **cross axis** on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).
+
+```css
+.container {
+  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+}
+```
+
+![Align Items](images/align-items.png)
+
+## Child Container
+
+### Align Self
+
+This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
+
+![Align Self](images/align-self.png)
 
 ## Additional Reading
 
