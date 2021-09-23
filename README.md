@@ -140,6 +140,16 @@ If all items have flex-grow set to 1, the remaining space in the container will 
 
 ![Flex grow](images/flex-grow.png)
 
+### flex
+
+This is the shorthand for **flex-grow**, **flex-shrink** and **flex-basis** combined. The second and third parameters (flex-shrink and flex-basis) are optional. The default is 0 1 auto, but if you set it with a single number value, it’s like 1 0.
+
+```css
+.item {
+  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+}
+```
+
 ## Additional Reading
 
 - [Basic concepts of flexbox : Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox

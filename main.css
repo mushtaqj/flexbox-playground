@@ -22,6 +22,7 @@
   padding: 20px;
   margin: 10px;
   /* flex-grow: 1; */
+  flex: 1;
 }
 
 /*
@@ -52,3 +53,7 @@ Control order of items at the child level
 .item-4 {
  flex-grow: 2;
 }*/
+
+.item-5 {
+  flex: 5;
+}
