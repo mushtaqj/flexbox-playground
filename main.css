@@ -21,6 +21,7 @@
   font-size: 35px;
   padding: 20px;
   margin: 10px;
+  flex-grow: 1;
 }
 
 /*
@@ -45,3 +46,10 @@ Control order of items at the child level
 .item-5 {
   order: 2;
 } */
+
+
+/*Control flex-grow of items at the child level*/
+
+.item-4 {
+ flex-grow: 2;
+}
